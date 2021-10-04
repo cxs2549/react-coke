@@ -1,12 +1,22 @@
 import Hamburger from 'hamburger-react'
+import Menu from './Menu/Menu'
+import styled from 'styled-components'
+import useOnClickOutside from 'use-onclickoutside'
+import {useRef} from 'react'
 
-
-const Burger = ({open, click}) => {
+const StyledBurger = styled.div`
 	
+`
+
+
+const Burger = ({open, close, click, links}) => {
+	const menuRef = useRef()
+	useOnClickOutside(menuRef, close)
 	return (
-		<div className="transform -translate-x-4 md:hidden opacity-75 hover:opacity-100 transition-opacity duration-300">
+		<StyledBurger className="transform -translate-x-4 lg:hidden" open={open} ref={menuRef}>
 			<Hamburger size={22} rounded toggled={open} toggle={click} />
-		</div>
+			<Menu open={open} links={links} />
+		</StyledBurger>
 	)
 }
 export default Burger

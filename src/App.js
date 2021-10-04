@@ -4,6 +4,9 @@ const App = () => {
   return (
     <>
       <Header />
+      <main className="bg-green-400 h-screen">
+       
+      </main>
     </>
   )
 }
