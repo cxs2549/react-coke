@@ -14,6 +14,14 @@ const StyledHeader = styled.header`
 `
 const Header = () => {
 	const [ isOpen, setIsOpen ] = useState(false)
+	const handleToggle = () => {
+		setIsOpen(!isOpen)
+		document.body.classList.toggle('freeze-flow')
+	}
+	const handleClose= () => {
+		setIsOpen(false)
+		document.body.classList.remove('freeze-flow')
+	}
 	const links = [
 		{name: 'home', to: "/"},
 		{
@@ -39,8 +47,8 @@ const Header = () => {
 				<div className="max-w-7xl mx-auto px-5 flex items-center h-full justify-between relative xl:px-0">
 					<Burger
 						open={isOpen}
-						close={() => setIsOpen(false)}
-						click={() => setIsOpen(!isOpen)}
+						close={handleClose}
+						click={handleToggle}
 						links={links}
 					/>
 					<div>

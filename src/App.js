@@ -14,7 +14,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="bg-white h-screen max-w-7xl mx-auto">
+      <main className="bg-white  max-w-7xl mx-auto">
         {element}
       </main>
       <Footer />

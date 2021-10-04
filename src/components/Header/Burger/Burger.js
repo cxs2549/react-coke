@@ -15,7 +15,7 @@ const Burger = ({open, close, click, links}) => {
 	return (
 		<StyledBurger className="transform -translate-x-4 lg:hidden" open={open} ref={menuRef}>
 			<Hamburger size={22} rounded toggled={open} toggle={click} />
-			<Menu open={open} links={links} />
+			<Menu open={open} close={close} links={links} />
 		</StyledBurger>
 	)
 }

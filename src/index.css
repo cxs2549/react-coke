@@ -18,6 +18,10 @@ body {
   background-color: black;
 }
 
+.freeze-flow {
+  overflow-y: hidden;
+}
+
 main {
   position: relative;
   z-index: 0;
