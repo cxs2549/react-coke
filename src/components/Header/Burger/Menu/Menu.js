@@ -8,6 +8,8 @@ const StyledMenu = styled.div`
 	z-index: 100;
 	top: 64px;
 	left: -4px;
+	right: 0;
+	max-width: 64rem;
 	width: 100vw;
 	background-color: #fff;
 	opacity: ${(props) => (props.open ? 1 : 0)};
