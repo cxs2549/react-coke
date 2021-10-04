@@ -4,14 +4,18 @@ import logo from '../../assets/logo.png'
 import Icons from './Icons/Icons'
 import { useState } from 'react'
 import Links from './Links/Links'
+import Headroom from 'react-headroom'
+import { Link } from 'react-router-dom'
 
 const StyledHeader = styled.header`
 	position: relative;
 	z-index: 10;
+	background-color: #fff;
 `
 const Header = () => {
 	const [ isOpen, setIsOpen ] = useState(false)
 	const links = [
+		{name: 'home', to: "/"},
 		{
 			name: 'our products',
 			links: [
@@ -24,24 +28,33 @@ const Header = () => {
 				'all products'
 			]
 		},
-		{ name: 'shop' },
+		{ name: 'shop', to:"store" },
 		{ name: 'give' },
 		{ name: 'rewards' },
-		{ name: 'where to buy' }
+		{ name: 'where to buy', to: 'where_to_buy' }
 	]
 	return (
-		<StyledHeader className="h-20 border-b">
-			<div className="max-w-5xl mx-auto px-5 flex items-center h-full justify-between relative xl:px-0">
-				<Burger open={isOpen} close={() => setIsOpen(false)} click={() => setIsOpen(!isOpen)} links={links} />
-				<div>
-					<div className="absolute left-1/2 transform -translate-x-1/2 lg:left-10 top-1/2 -translate-y-1/2 xl:left-8 cursor-pointer">
-						<img src={logo} className="w-16" alt="" />
+		<Headroom>
+			<StyledHeader className="h-20 shadow">
+				<div className="max-w-7xl mx-auto px-5 flex items-center h-full justify-between relative xl:px-0">
+					<Burger
+						open={isOpen}
+						close={() => setIsOpen(false)}
+						click={() => setIsOpen(!isOpen)}
+						links={links}
+					/>
+					<div>
+						<div className="absolute left-1/2 transform -translate-x-1/2 lg:left-10 top-1/2 -translate-y-1/2 xl:left-8 cursor-pointer">
+							<Link to="/">
+								<img src={logo} className="w-16" alt="" />
+							</Link>
+						</div>
+						<Links links={links} />
 					</div>
-					<Links links={links} />
+					<Icons />
 				</div>
-				<Icons />
-			</div>
-		</StyledHeader>
+			</StyledHeader>
+		</Headroom>
 	)
 }
 export default Header

@@ -50,7 +50,7 @@ const Menu = ({ open, links }) => {
 					>
 						<div className="flex items-center justify-between">
 							<span className="py-2 block">{link.name}</span>
-							{i === 0 && (
+							{i === 1 && (
 								<div
 									ref={arrowRef}
 									className="transform transition-transform duration-200"
@@ -59,13 +59,8 @@ const Menu = ({ open, links }) => {
 								</div>
 							)}
 						</div>
-						{/* {i === 0 &&
-						showProducts && (
-							<ul className="ml-4 pt-2 pb-4 flex flex-col gap-y-4 text-base capitalize">
-								{link.links.map((link, i) => <li key={i}>{link}</li>)}
-							</ul>
-						)} */}
-						{i === 0 && (
+					
+						{i === 1 && (
 							<CSSTransition unmountOnExit in={showProducts} timeout={200} classNames="my-node">
 								<ul className="ml-4 pt-2 pb-4 flex flex-col gap-y-4 text-base capitalize">
 									{link.links.map((link, i) => <li key={i} className="hover:underline">{link}</li>)}
