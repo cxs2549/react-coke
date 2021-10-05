@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/react-coke/static/css/main.fd761508.chunk.css",
+    "main.js": "/react-coke/static/js/main.36f5db26.chunk.js",
+    "main.js.map": "/react-coke/static/js/main.36f5db26.chunk.js.map",
+    "runtime-main.js": "/react-coke/static/js/runtime-main.a5d36cb4.js",
+    "runtime-main.js.map": "/react-coke/static/js/runtime-main.a5d36cb4.js.map",
+    "static/js/2.78df2288.chunk.js": "/react-coke/static/js/2.78df2288.chunk.js",
+    "static/js/2.78df2288.chunk.js.map": "/react-coke/static/js/2.78df2288.chunk.js.map",
+    "index.html": "/react-coke/index.html",
+    "static/css/main.fd761508.chunk.css.map": "/react-coke/static/css/main.fd761508.chunk.css.map",
+    "static/js/2.78df2288.chunk.js.LICENSE.txt": "/react-coke/static/js/2.78df2288.chunk.js.LICENSE.txt",
+    "static/media/bubbles.a56410d1.png": "/react-coke/static/media/bubbles.a56410d1.png",
+    "static/media/coca-cola-13.2oz_NEW.197ee62c.png": "/react-coke/static/media/coca-cola-13.2oz_NEW.197ee62c.png",
+    "static/media/coca-cola-original-20oz.b468fed1.png": "/react-coke/static/media/coca-cola-original-20oz.b468fed1.png",
+    "static/media/coca-cola-with-coffee-dark-blend-12oz.0e7dd1be.png": "/react-coke/static/media/coca-cola-with-coffee-dark-blend-12oz.0e7dd1be.png",
+    "static/media/coke-zero-sugar-2-liter-bottle.95b350ee.png": "/react-coke/static/media/coke-zero-sugar-2-liter-bottle.95b350ee.png",
+    "static/media/hero.8396e633.png": "/react-coke/static/media/hero.8396e633.png",
+    "static/media/hero.e142f843.png": "/react-coke/static/media/hero.e142f843.png",
+    "static/media/logo.edfd647c.png": "/react-coke/static/media/logo.edfd647c.png",
+    "static/media/logo_white.bb3a9f61.png": "/react-coke/static/media/logo_white.bb3a9f61.png",
+    "static/media/mobile-hero.44763ab5.png": "/react-coke/static/media/mobile-hero.44763ab5.png",
+    "static/media/mobile-hero.ebd5e362.png": "/react-coke/static/media/mobile-hero.ebd5e362.png",
+    "static/media/nav-all-products.c0d166d7.png": "/react-coke/static/media/nav-all-products.c0d166d7.png",
+    "static/media/nav-coca-cola-flavors.1dd624bb.png": "/react-coke/static/media/nav-coca-cola-flavors.1dd624bb.png",
+    "static/media/nav-coca-cola.8e4c327e.png": "/react-coke/static/media/nav-coca-cola.8e4c327e.png",
+    "static/media/nav-coke-energy.04d105a0.png": "/react-coke/static/media/nav-coke-energy.04d105a0.png",
+    "static/media/nav-coke-with-coffee.01650b3b.jpeg": "/react-coke/static/media/nav-coke-with-coffee.01650b3b.jpeg",
+    "static/media/nav-local-tastes.78625712.png": "/react-coke/static/media/nav-local-tastes.78625712.png",
+    "static/media/nav-zero-sugar.62f59c84.png": "/react-coke/static/media/nav-zero-sugar.62f59c84.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5d36cb4.js",
+    "static/js/2.78df2288.chunk.js",
+    "static/css/main.fd761508.chunk.css",
+    "static/js/main.36f5db26.chunk.js"
+  ]
+}
