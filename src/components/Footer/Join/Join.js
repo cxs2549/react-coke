@@ -14,11 +14,11 @@ const Join = () => {
 			<div className="py-6 w-full">
 				<div className="flex flex-col w-full">
 					<span className="text-xs mb-1">Email Address*</span>
-					<input type="text" className="w-full  rounded" />
+					<input type="text" className="w-full  rounded px-4 text-gray-800" />
 				</div>
 				<div className="flex flex-col w-full mt-4">
 					<span className="text-xs mb-1">Date of Birth*</span>
-					<input type="date" className="w-full  rounded text-gray-800"  />
+					<input type="date" className="w-full  rounded text-gray-800 px-4"  />
 				</div>
                 <div className="flex  gap-4 mt-4">
                     <input type="checkbox" name="" id="" />
