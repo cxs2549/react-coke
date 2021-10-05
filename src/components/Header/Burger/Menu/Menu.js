@@ -54,7 +54,7 @@ const Menu = ({ open, close, links }) => {
 	
 	}
 	return (
-		<StyledMenu open={open}>
+		<StyledMenu open={open} className="border-b">
 			<ul className="flex flex-col gap-y-4 p-8 text-xl">
 			{links.map((link, i) => (
 				<div>

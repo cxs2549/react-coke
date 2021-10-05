@@ -18,7 +18,7 @@ const Join = () => {
 				</div>
 				<div className="flex flex-col w-full mt-4">
 					<span className="text-xs mb-1">Date of Birth*</span>
-					<input type="date" className="w-full  rounded" className="text-gray-800" />
+					<input type="date" className="w-full  rounded text-gray-800"  />
 				</div>
                 <div className="flex  gap-4 mt-4">
                     <input type="checkbox" name="" id="" />

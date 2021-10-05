@@ -17,10 +17,10 @@ const Icons = () => {
 	return (
 		<StyledIcons className="flex items-center gap-6 xl:gap-10">
 			<NavLink to="account">
-				<AiOutlineUser className="opacity-75 hover:opacity-100 transition-opacity duration-300" />
+				<AiOutlineUser className="opacity-90 hover:opacity-100 transition-opacity duration-300" />
 			</NavLink>
 			<NavLink to="cart">
-				<AiOutlineShoppingCart className="opacity-75 hover:opacity-100 transition-opacity duration-300" />
+				<AiOutlineShoppingCart className="opacity-90 hover:opacity-100 transition-opacity duration-300" />
 			</NavLink>
 		</StyledIcons>
 	)

@@ -9,9 +9,12 @@ const StyledHero = styled.div`
 `
 const Hero = () => {
 	return (
-		<StyledHero>
+		<StyledHero className="relative">
 			<img src={heroMobile} alt="" className="md:hidden" />
 			<img src={hero} alt="" className="hidden md:block" />
+			<button className="absolute left-1/2 bottom-6 transform -translate-x-1/2 uppercase text-red-500 bg-white px-20 whitespace-nowrap py-3 rounded-full font-bold text-lg shadow md:top-40 md:bottom-auto">
+				try it first
+			</button>
 		</StyledHero>
 	)
 }
