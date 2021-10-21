@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-coke/static/css/main.fd761508.chunk.css",
-    "main.js": "/react-coke/static/js/main.36f5db26.chunk.js",
-    "main.js.map": "/react-coke/static/js/main.36f5db26.chunk.js.map",
+    "main.css": "/react-coke/static/css/main.f7ba5f28.chunk.css",
+    "main.js": "/react-coke/static/js/main.65d827e9.chunk.js",
+    "main.js.map": "/react-coke/static/js/main.65d827e9.chunk.js.map",
     "runtime-main.js": "/react-coke/static/js/runtime-main.a5d36cb4.js",
     "runtime-main.js.map": "/react-coke/static/js/runtime-main.a5d36cb4.js.map",
-    "static/js/2.78df2288.chunk.js": "/react-coke/static/js/2.78df2288.chunk.js",
-    "static/js/2.78df2288.chunk.js.map": "/react-coke/static/js/2.78df2288.chunk.js.map",
+    "static/js/2.35d6cb5c.chunk.js": "/react-coke/static/js/2.35d6cb5c.chunk.js",
+    "static/js/2.35d6cb5c.chunk.js.map": "/react-coke/static/js/2.35d6cb5c.chunk.js.map",
     "index.html": "/react-coke/index.html",
-    "static/css/main.fd761508.chunk.css.map": "/react-coke/static/css/main.fd761508.chunk.css.map",
-    "static/js/2.78df2288.chunk.js.LICENSE.txt": "/react-coke/static/js/2.78df2288.chunk.js.LICENSE.txt",
+    "static/css/main.f7ba5f28.chunk.css.map": "/react-coke/static/css/main.f7ba5f28.chunk.css.map",
+    "static/js/2.35d6cb5c.chunk.js.LICENSE.txt": "/react-coke/static/js/2.35d6cb5c.chunk.js.LICENSE.txt",
     "static/media/bubbles.a56410d1.png": "/react-coke/static/media/bubbles.a56410d1.png",
     "static/media/coca-cola-13.2oz_NEW.197ee62c.png": "/react-coke/static/media/coca-cola-13.2oz_NEW.197ee62c.png",
     "static/media/coca-cola-original-20oz.b468fed1.png": "/react-coke/static/media/coca-cola-original-20oz.b468fed1.png",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a5d36cb4.js",
-    "static/js/2.78df2288.chunk.js",
-    "static/css/main.fd761508.chunk.css",
-    "static/js/main.36f5db26.chunk.js"
+    "static/js/2.35d6cb5c.chunk.js",
+    "static/css/main.f7ba5f28.chunk.css",
+    "static/js/main.65d827e9.chunk.js"
   ]
 }
