@@ -41,23 +41,13 @@ const App = () => {
 			<Header />
 
 			<main className="bg-white  max-w-7xl mx-auto">
-				<TransitionGroup>
-					<CSSTransition
-						appear
-						key={location.key}
-						classNames="page"
-						timeout={800}
-						unmountOnExit
-					>
-						<Routes>
-							<Route path="/" element={<Home />} exact />
-							<Route path="/account" element={<Account />} />
-							<Route path="/cart" element={<Cart />} />
-							<Route path="/products" element={<Products />} />
-							<Route path="/shop" element={<Shop />} />
-						</Routes>
-					</CSSTransition>
-				</TransitionGroup>
+				<Routes>
+					<Route path="/" element={<Home />} exact />
+					<Route path="/account" element={<Account />} />
+					<Route path="/cart" element={<Cart />} />
+					<Route path="/products" element={<Products />} />
+					<Route path="/store" element={<Shop />} />
+				</Routes>
 			</main>
 
 			<Footer />
