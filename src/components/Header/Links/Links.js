@@ -13,14 +13,15 @@ const StyledLinks = styled.div`
 			position: absolute;
 			bottom: -1.65rem;
 			left: 0;
-			width: 100%;
+			width: 10%;
 			height: 4px;
 			opacity: 0;
 			background-color: red;
-			transition: opacity 200ms;
+			transition: all 400ms;
 		}
 		&.active::after {
 			opacity: 1;
+			width: 100%;
 		}
 		&:active::after {
 			opacity: 1;

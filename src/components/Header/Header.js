@@ -11,19 +11,35 @@ const StyledHeader = styled.header`
 	position: relative;
 	z-index: 10;
 	background-color: #fff;
+
+	#overlay {
+		height: 100vh;
+		width: 100vw;
+		top: 80px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		position: absolute;
+		transition: opacity 500ms;
+		background-color: rgba(0, 0, 0, .5);
+		pointer-events: none;
+		opacity: ${(props) => (props.open ? 1 : 0)};
+	}
 `
 const Header = () => {
 	const [ isOpen, setIsOpen ] = useState(false)
+
 	const handleToggle = () => {
 		setIsOpen(!isOpen)
 		document.body.classList.toggle('freeze-flow')
 	}
-	const handleClose= () => {
+	const handleClose = () => {
 		setIsOpen(false)
 		document.body.classList.remove('freeze-flow')
 	}
 	const links = [
-		{name: 'home', to: "/"},
+		{ name: 'home', to: '/' },
 		{
 			name: 'our products',
 			links: [
@@ -36,21 +52,17 @@ const Header = () => {
 				'all products'
 			]
 		},
-		{ name: 'shop', to:"store" },
+		{ name: 'shop', to: 'store' },
 		{ name: 'give' },
 		{ name: 'rewards' },
 		{ name: 'where to buy', to: 'where_to_buy' }
 	]
 	return (
 		<Headroom>
-			<StyledHeader className="h-20 shadow">
+			<StyledHeader className="h-20 shadow" open={isOpen}>
 				<div className="max-w-7xl mx-auto px-5 flex items-center h-full justify-between relative xl:px-0">
-					<Burger
-						open={isOpen}
-						close={handleClose}
-						click={handleToggle}
-						links={links}
-					/>
+					<Burger open={isOpen} close={handleClose} click={handleToggle} links={links} />
+					<div id="overlay" className="xl:hidden"></div>
 					<div>
 						<div className="absolute left-1/2 transform -translate-x-1/2 lg:left-10 top-1/2 -translate-y-1/2 xl:left-8 cursor-pointer">
 							<Link to="/">
