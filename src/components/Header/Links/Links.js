@@ -25,7 +25,9 @@ const StyledLinks = styled.div`
 		}
 		&:active::after {
 			opacity: 1;
-
+		}
+		&.active {
+			opacity: 1;
 		}
 	}
 
@@ -47,13 +49,13 @@ const Links = ({ links }) => {
 							to={link.to || link.name}
 							key={i}
 							end
-							className="capitalize flex items-center gap-2 font-medium opacity-90 cursor-pointer hover:opacity-100 transition-opacity duration-200"
+							className="capitalize flex items-center gap-2 font-medium opacity-75 cursor-pointer hover:opacity-100 transition-opacity duration-200"
 						>
 							{link.name}
 						</NavLink>
 					) : (
 						<div className="relative" ref={productsRef}>
-							<div className="capitalize flex items-center gap-2 font-medium opacity-90 cursor-pointer hover:opacity-100 transition-opacity duration-200" onClick={() => setIsProductsOpen(!isProductsOpen)}>
+							<div className="capitalize flex items-center gap-2 font-medium opacity-75 cursor-pointer hover:opacity-100 transition-opacity duration-200" onClick={() => setIsProductsOpen(!isProductsOpen)}>
 								{link.name}
 								<div
 									ref={arrowRef}

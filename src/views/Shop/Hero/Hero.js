@@ -19,19 +19,19 @@ const Hero = () => {
 						Get <span className="font-bold">$5 off 6 personalized bottles!</span> <br /> Shop
 						new label designs perfect for <br /> gifts and occasions.{' '}
 					</p>
-					<button className="bg-red-500 text-white py-3 px-8 rounded-full shadow font-semibold mt-4 uppercase">Shop Now</button>
+					<button className="bg-red-500 text-white py-3 px-8 rounded-full shadow font-semibold mt-4 uppercase hover:bg-white hover:text-red-500 transition-colors duration-300">Shop Now</button>
 				</div>
 			</div>
 			<div className="flex flex-col md:grid md:grid-cols-2 uppercase font-semibold text-xl">
 				<div className="flex md:flex-col items-center md:h-full justify-between md:justify-center md:gap-y-4 py-6 px-5 border-b-2 border-t-2 md:border-t-0 md:border-r-2 md:border-l-2 md:border-b-0 border-black">
-					<h1 className="md:text-center">new melamine collection</h1>
-					<div className="text-white bg-red-500 rounded-full flex items-center justify-center h-8 w-8">
+					<h1 className="md:text-center h-20 flex items-center justify-center">new melamine collection</h1>
+					<div className="text-white bg-red-500 rounded-full flex items-center justify-center h-8 w-8 shadow">
 						<i className="fa fa-plus" aria-hidden="true" />
 					</div>
 				</div>
 				<div className="flex md:flex-col items-center justify-between md:justify-center md:gap-y-4 py-6 px-5 border-b-2 md:border-b-0 border-black">
-					<h1 className="md:text-center">it's #hoodieseason</h1>
-					<div className="text-white bg-red-500 rounded-full flex items-center justify-center h-8 w-8">
+					<h1 className="md:text-center h-20 flex items-center justify-center">it's #hoodieseason</h1>
+					<div className="text-white bg-red-500 rounded-full flex items-center justify-center h-8 w-8 shadow">
 						<i className="fa fa-plus" aria-hidden="true" />
 					</div>
 				</div>

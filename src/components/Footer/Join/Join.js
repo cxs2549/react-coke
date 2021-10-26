@@ -7,7 +7,7 @@ input {
 const Join = () => {
 	return (
 		<StyledJoin className="flex flex-col items-center justify-center py-8 px-8">
-			<h4 className="font-semibold mb-1 text-xl">SIGN UP TO HEAR FROM US</h4>
+			<h4 className="font-semibold mb-1 text-xl text-red-500">SIGN UP TO HEAR FROM US</h4>
 			<p className="text-sm text-center max-w-sm">
 				We'll send you emails on the latest happenings, promotions, and more.
 			</p>
@@ -27,7 +27,7 @@ const Join = () => {
                 <h5 className="text-xs pt-5 leading-4">
                 This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
                 </h5>
-                <button className="uppercase font-semibold border py-3 rounded-full w-full mt-8">Join the list</button>
+                <button className="uppercase font-semibold border py-3 rounded-full w-full mt-8 hover:bg-white hover:text-black hover:border-opacity-0 transition-colors duration-300">Join the list</button>
 			</div>
 		</StyledJoin>
 	)

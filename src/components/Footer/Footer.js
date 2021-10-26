@@ -9,6 +9,11 @@ const StyledFooter = styled.footer`
 	background-color: rgb(30, 30, 30);
 	svg {
 		font-size: 1.5rem;
+		cursor: pointer;
+		transition: color 400ms;
+		&:hover {
+			color: red;
+		}
 	}
 `
 const Footer = () => {
@@ -16,7 +21,7 @@ const Footer = () => {
 		<StyledFooter className=" text-white">
 			<div className="max-w-7xl mx-auto">
 				<SignUp />
-				<div className="lg:flex items-center lg:py-8 md:border-b border-gray-800">
+				<div className="lg:flex items-center lg:py-8 md:border-b border-gray-500">
                     <Join />
                     <Links />
                 </div>
@@ -33,7 +38,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<p className="text-xs text-center">
-						Copyright &copy; 2021 CxS Development for The Coca-Cola Company. All rights
+						Copyright &copy; 2021 CxS Development for The Coca-Cola Company. <br className="md:hidden" /> All rights
 						reserved.
 					</p>
 				</div>

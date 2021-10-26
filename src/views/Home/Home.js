@@ -6,7 +6,9 @@ const Home = () => {
 return (
 <StyledHome>
     <Hero />
-    <Flavors />
+    <div className="max-w-7xl mx-auto">
+        <Flavors />
+    </div>
 </StyledHome>
 )
 }

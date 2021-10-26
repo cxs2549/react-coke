@@ -45,7 +45,7 @@ const Links = () => {
 				<ul key={i} className="flex flex-col gap-y-3">
 					<h2 className="mb-3 uppercase font-bold
     text-sm">{link.title}</h2>
-					{link.links.map((link, i) => <li key={i} className="capitalize">{link}</li>)}
+					{link.links.map((link, i) => <li key={i} className="capitalize cursor-pointer hover:text-red-500">{link}</li>)}
 				</ul>
 			))}
 		</StyledLinks>
